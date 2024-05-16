@@ -17,14 +17,14 @@
 
           <div class="subtopicsContainer">
             <div class="subtopic">
-              <h2>Add Subtopic</h2>
-              <label for="subtopicName">Subtopic Name:</label>
+              <h2>Add Main Topic</h2>
+              <label for="subtopicName">Main Topic Name:</label>
               <input type="text" class="subtopicName" required /><br />
 
               <div class="topicsContainer">
                 <div class="topic">
-                  <h3>Add Topic</h3>
-                  <label for="topicName">Topic Name:</label>
+                  <h3>Add Subtopic</h3>
+                  <label for="topicName">Subtopic Name:</label>
                   <input type="text" class="topicName" required /><br />
                   <div class="linksContainer">
                     <h4>Add Link</h4>
@@ -50,24 +50,24 @@
                     onclick="removeTopic(this)"
                     class="remove-btn"
                   >
-                    Remove Topic
+                    Remove Subtopic
                   </button>
                 </div>
               </div>
               <button type="button" onclick="addTopic(this)" class="add-btn">
-                Add Another Topic</button
+                Add Another Subtopic</button
               ><br />
               <button
                 type="button"
                 onclick="removeSubtopic(this)"
                 class="remove-btn"
               >
-                Remove Subtopic
+                Remove Main Topic
               </button>
             </div>
           </div>
           <button type="button" onclick="addSubtopic(this)" class="add-btn">
-            Add Another Subtopic</button
+            Add Another Main Topic</button
           ><br />
           <button
             type="button"

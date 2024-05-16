@@ -52,14 +52,14 @@ function clearForm() {
 
             <div class="subtopicsContainer">
                 <div class="subtopic">
-                    <h2>Add Subtopic</h2>
-                    <label for="subtopicName">Subtopic Name:</label>
+                    <h2>Add Main Topic</h2>
+                    <label for="subtopicName">Main Topic Name:</label>
                     <input type="text" class="subtopicName" required><br>
 
                     <div class="topicsContainer">
                         <div class="topic">
-                            <h3>Add Topic</h3>
-                            <label for="topicName">Topic Name:</label>
+                            <h3>Add Subtopic</h3>
+                            <label for="topicName">Subtopic Name:</label>
                             <input type="text" class="topicName" required><br>
                             <div class="linksContainer">
                                 <h4>Add Link</h4>
@@ -72,14 +72,14 @@ function clearForm() {
                                 </div>
                             </div>
                             <button type="button" onclick="addLink(this)" class="add-btn">Add Another Link</button><br>
-                            <button type="button" onclick="removeTopic(this)" class="remove-btn">Remove Topic</button>
+                            <button type="button" onclick="removeTopic(this)" class="remove-btn">Remove Subtopic</button>
                         </div>
                     </div>
-                    <button type="button" onclick="addTopic(this)" class="add-btn">Add Another Topic</button><br>
-                    <button type="button" onclick="removeSubtopic(this)" class="remove-btn">Remove Subtopic</button>
+                    <button type="button" onclick="addTopic(this)" class="add-btn">Add Another Subtopic</button><br>
+                    <button type="button" onclick="removeSubtopic(this)" class="remove-btn">Remove Main Topic</button>
                 </div>
             </div>
-            <button type="button" onclick="addSubtopic(this)" class="add-btn">Add Another Subtopic</button><br>
+            <button type="button" onclick="addSubtopic(this)" class="add-btn">Add Another Main Topic</button><br>
             <button type="button" onclick="removeSubject(this)" class="remove-btn">Remove Subject</button>
         </div>`;
 }
@@ -93,14 +93,14 @@ function addSubject() {
 
             <div class="subtopicsContainer">
                 <div class="subtopic">
-                    <h2>Add Subtopic</h2>
-                    <label for="subtopicName">Subtopic Name:</label>
+                    <h2>Add Main Topic</h2>
+                    <label for="subtopicName">Main Topic Name:</label>
                     <input type="text" class="subtopicName" required><br>
 
                     <div class="topicsContainer">
                         <div class="topic">
-                            <h3>Add Topic</h3>
-                            <label for="topicName">Topic Name:</label>
+                            <h3>Add Subtopic</h3>
+                            <label for="topicName">Subtopic Name:</label>
                             <input type="text" class="topicName" required><br>
                             <div class="linksContainer">
                                 <h4>Add Link</h4>
@@ -113,14 +113,14 @@ function addSubject() {
                                 </div>
                             </div>
                             <button type="button" onclick="addLink(this)" class="add-btn">Add Another Link</button><br>
-                            <button type="button" onclick="removeTopic(this)" class="remove-btn">Remove Topic</button>
+                            <button type="button" onclick="removeTopic(this)" class="remove-btn">Remove Subtopic</button>
                         </div>
                     </div>
-                    <button type="button" onclick="addTopic(this)" class="add-btn">Add Another Topic</button><br>
-                    <button type="button" onclick="removeSubtopic(this)" class="remove-btn">Remove Subtopic</button>
+                    <button type="button" onclick="addTopic(this)" class="add-btn">Add Another Subtopic</button><br>
+                    <button type="button" onclick="removeSubtopic(this)" class="remove-btn">Remove Main Topic</button>
                 </div>
             </div>
-            <button type="button" onclick="addSubtopic(this)" class="add-btn">Add Another Subtopic</button><br>
+            <button type="button" onclick="addSubtopic(this)" class="add-btn">Add Another Main Topic</button><br>
             <button type="button" onclick="removeSubject(this)" class="remove-btn">Remove Subject</button>
         </div>`;
 
@@ -132,13 +132,13 @@ function addSubject() {
 function addSubtopic(button) {
   const subtopicHTML = `
         <div class="subtopic">
-            <h2>Add Subtopic</h2>
-            <label for="subtopicName">Subtopic Name:</label>
+            <h2>Add Main Topic</h2>
+            <label for="subtopicName">Main Topic Name:</label>
             <input type="text" class="subtopicName" required><br>
             <div class="topicsContainer">
                 <div class="topic">
-                    <h3>Add Topic</h3>
-                    <label for="topicName">Topic Name:</label>
+                    <h3>Add Subtopic</h3>
+                    <label for="topicName">Subtopic Name:</label>
                     <input type="text" class="topicName" required><br>
                     <div class="linksContainer">
                         <h4>Add Link</h4>
@@ -151,11 +151,11 @@ function addSubtopic(button) {
                         </div>
                     </div>
                     <button type="button" onclick="addLink(this)" class="add-btn">Add Another Link</button><br>
-                    <button type="button" onclick="removeTopic(this)" class="remove-btn">Remove Topic</button>
+                    <button type="button" onclick="removeTopic(this)" class="remove-btn">Remove Subtopic</button>
                 </div>
             </div>
-            <button type="button" onclick="addTopic(this)" class="add-btn">Add Another Topic</button><br>
-            <button type="button" onclick="removeSubtopic(this)" class="remove-btn">Remove Subtopic</button>
+            <button type="button" onclick="addTopic(this)" class="add-btn">Add Another Subtopic</button><br>
+            <button type="button" onclick="removeSubtopic(this)" class="remove-btn">Remove Main Topic</button>
         </div>`;
 
   button.parentElement
@@ -166,8 +166,8 @@ function addSubtopic(button) {
 function addTopic(button) {
   const topicHTML = `
         <div class="topic">
-            <h3>Add Topic</h3>
-            <label for="topicName">Topic Name:</label>
+            <h3>Add Subtopic</h3>
+            <label for="topicName">Subtopic Name:</label>
             <input type="text" class="topicName" required><br>
             <div class="linksContainer">
                 <h4>Add Link</h4>
@@ -180,7 +180,7 @@ function addTopic(button) {
                 </div>
             </div>
             <button type="button" onclick="addLink(this)" class="add-btn">Add Another Link</button><br>
-            <button type="button" onclick="removeTopic(this)" class="remove-btn">Remove Topic</button>
+            <button type="button" onclick="removeTopic(this)" class="remove-btn">Remove Subtopic</button>
         </div>`;
 
   button.previousElementSibling.insertAdjacentHTML("beforeend", topicHTML);
