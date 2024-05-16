@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Array Input App</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>JavaScript Array Input App</h1>
+    <form id="subjectForm">
+      <div id="subjectsContainer">
+        <div class="subject">
+          <h2>Add Subject</h2>
+          <label for="subjectName">Subject Name:</label>
+          <input type="text" class="subjectName" required /><br />
+
+          <div class="subtopicsContainer">
+            <div class="subtopic">
+              <h2>Add Subtopic</h2>
+              <label for="subtopicName">Subtopic Name:</label>
+              <input type="text" class="subtopicName" required /><br />
+
+              <div class="topicsContainer">
+                <div class="topic">
+                  <h3>Add Topic</h3>
+                  <label for="topicName">Topic Name:</label>
+                  <input type="text" class="topicName" required /><br />
+                  <div class="linksContainer">
+                    <h4>Add Link</h4>
+                    <div class="link">
+                      <label for="linkName">Link Name:</label>
+                      <input type="text" class="linkName" required /><br />
+                      <label for="linkUrl">Link URL:</label>
+                      <input type="text" class="linkUrl" required /><br />
+                      <button
+                        type="button"
+                        onclick="removeLink(this)"
+                        class="remove-btn"
+                      >
+                        Remove Link
+                      </button>
+                    </div>
+                  </div>
+                  <button type="button" onclick="addLink(this)" class="add-btn">
+                    Add Another Link</button
+                  ><br />
+                  <button
+                    type="button"
+                    onclick="removeTopic(this)"
+                    class="remove-btn"
+                  >
+                    Remove Topic
+                  </button>
+                </div>
+              </div>
+              <button type="button" onclick="addTopic(this)" class="add-btn">
+                Add Another Topic</button
+              ><br />
+              <button
+                type="button"
+                onclick="removeSubtopic(this)"
+                class="remove-btn"
+              >
+                Remove Subtopic
+              </button>
+            </div>
+          </div>
+          <button type="button" onclick="addSubtopic(this)" class="add-btn">
+            Add Another Subtopic</button
+          ><br />
+          <button
+            type="button"
+            onclick="removeSubject(this)"
+            class="remove-btn"
+          >
+            Remove Subject
+          </button>
+        </div>
+      </div>
+      <button type="button" onclick="addSubject()" class="add-btn">
+        Add Another Subject</button
+      ><br />
+
+      <button type="button" onclick="saveSubjects()" class="submit-btn">
+        Save to Array
+      </button>
+    </form>
+
+    <h2>Current Array:</h2>
+    <pre id="arrayOutput"></pre>
+
+    <button onclick="downloadJSFile()" class="download-btn">
+      Download JS File
+    </button>
+
+    <script src="app.js"></script>
+  </body>
+</html>
