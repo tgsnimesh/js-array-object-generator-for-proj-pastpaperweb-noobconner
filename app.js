@@ -31,7 +31,7 @@ function saveSubjects() {
   });
 
   displayArray();
-  clearForm();
+  // clearForm();
 }
 
 function displayArray() {
